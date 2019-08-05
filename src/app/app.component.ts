@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+      <main flex>
+          <router-outlet></router-outlet>
+      </main>`,
+  styles: []
 })
 export class AppComponent {
-  title = 'pikno';
+
+  constructor() {
+  }
 }
+
