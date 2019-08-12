@@ -21,4 +21,4 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ]
 })
-export class SharedComponentsModule { }
+export class SharedModule { }

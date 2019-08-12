@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'pn-root',
   template: `
       <main flex>
           <router-outlet></router-outlet>

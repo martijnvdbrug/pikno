@@ -1,25 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {MatCardModule, MatChipsModule, MatGridListModule, MatToolbarModule} from '@angular/material';
-import {SharedComponentsModule} from '../shared-components/shared-components.module';
-import { InsightsOverviewComponent } from './insights-overview/insights-overview.component';
+import {MatCardModule, MatChipsModule, MatGridListModule} from '@angular/material';
+import {SharedModule} from '../shared/shared.module';
+import {ArticleService} from './article.service';
+import {ArticlesOverviewComponent} from './articles-overview/articles-overview.component';
 import { InsightCardComponent } from './insight-card/insight-card.component';
 
 
 
 @NgModule({
-  declarations: [InsightsOverviewComponent, InsightCardComponent],
+  declarations: [
+    ArticlesOverviewComponent,
+    InsightCardComponent
+  ],
   imports: [
     CommonModule,
-    SharedComponentsModule,
+    SharedModule,
     MatCardModule,
     MatGridListModule,
     MatChipsModule,
     FlexLayoutModule
   ],
+  providers: [
+    ArticleService
+  ],
   exports: [
-    InsightsOverviewComponent
+    ArticlesOverviewComponent
   ],
 })
 export class InsightModule { }

@@ -12,13 +12,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "pn",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "pn",
       "kebab-case"
     ],
     "import-blacklist": [
@@ -88,5 +88,10 @@
   },
   "rulesDirectory": [
     "codelyzer"
+  ],
+  "typedef": [
+    true,
+    "call-signature",
+    "property-declaration"
   ]
 }

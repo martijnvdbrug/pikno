@@ -1,0 +1,31 @@
+<pn-header>Pikno</pn-header>
+
+<div class="articles-overview-container">
+
+  <div fxLayout="row">
+
+    <div fxFlex="50%">
+      <ng-container *ngFor="let article of articles, let i = index">
+        <pn-insight-card *ngIf="isOdd(i)"
+                         [title]="article.title"
+                         [subtitle]="article.subtitle"
+                         [tags]="article.tags"
+        ></pn-insight-card>
+      </ng-container>
+    </div>
+
+    <div fxFlex="50%">
+      <ng-container *ngFor="let article of articles, let i = index">
+        <pn-insight-card *ngIf="isOdd(i+1)"
+                         [title]="article.title"
+                         [subtitle]="article.subtitle"
+                         [tags]="article.tags"
+        ></pn-insight-card>
+      </ng-container>
+    </div>
+
+  </div>
+
+</div>
+
+<pn-footer></pn-footer>
