@@ -6,13 +6,15 @@ import {SharedModule} from '../shared/shared.module';
 import {ArticleService} from './article.service';
 import {ArticlesOverviewComponent} from './articles-overview/articles-overview.component';
 import { InsightCardComponent } from './insight-card/insight-card.component';
+import { InsightsOverviewComponent } from './insights-overview/insights-overview.component';
 
 
 
 @NgModule({
   declarations: [
     ArticlesOverviewComponent,
-    InsightCardComponent
+    InsightCardComponent,
+    InsightsOverviewComponent
   ],
   imports: [
     CommonModule,

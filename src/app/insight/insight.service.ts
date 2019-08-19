@@ -41,4 +41,9 @@ export class ArticleService {
       }
     ];
   }
+
+  async get(id: string): Promise<Article> {
+    return
+  }
+
 }

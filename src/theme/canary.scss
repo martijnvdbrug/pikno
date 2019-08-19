@@ -1,0 +1,35 @@
+/* For use in src/lib/core/theming/_palette.scss */
+$canary: (
+  50 : #fefbeb,
+  100 : #fdf5ce,
+  200 : #fceeae,
+  300 : #fbe78d,
+  400 : #fae174,
+  500 : #f9dc5c,
+  600 : #f8d854,
+  700 : #f7d34a,
+  800 : #f6ce41,
+  900 : #f5c530,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #fff3d1,
+  A700 : #ffedb8,
+  contrast: (
+    50 : #37323E,
+    100 : #37323E,
+    200 : #37323E,
+    300 : #37323E,
+    400 : #37323E,
+    500 : #37323E,
+    600 : #37323E,
+    700 : #37323E,
+    800 : #37323E,
+    900 : #37323E,
+    A100 : #37323E,
+    A200 : #37323E,
+    A400 : #37323E,
+    A700 : #37323E,
+  )
+);
+$canary-contrast: map-get($canary, contrast);
+

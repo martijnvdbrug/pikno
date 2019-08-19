@@ -16,7 +16,7 @@ export class ArticlesOverviewComponent implements OnInit {
   ) { }
 
   async ngOnInit(): Promise<void> {
-    this.articles = await this.articleService.get();
+    this.articles = await this.articleService.getAll();
   }
 
   isOdd(i: number): boolean {
