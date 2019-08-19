@@ -31,4 +31,4 @@ $flamingo: (
   )
 );
 
-$flamingo-contrast: #FCFDFF;
+$flamingo-contrast: map-get($flamingo, contrast);

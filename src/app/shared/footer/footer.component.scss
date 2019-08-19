@@ -1,3 +1,5 @@
+@import '../../../theme/flamingo';
+
 .pn-footer {
   position: fixed;
   height: 50px;
@@ -8,7 +10,9 @@
   display: flex;
   justify-content: space-around;
   padding: 0 50px;
-  -webkit-box-shadow: 0px 0px 80px -50px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 80px -50px rgba(0,0,0,1);
-  box-shadow: 0px 0px 80px -50px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 80px -20px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 80px -20px rgba(0,0,0,1);
+  box-shadow: 0px 0px 80px -20px rgba(0,0,0,1);
+  background-color: map-get($flamingo, A100);
+  color: map-get($flamingo, 500);
 }
