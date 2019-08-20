@@ -8,26 +8,24 @@
 
     <div fxFlex="50%">
       <ng-container *ngFor="let article of articles, let i = index">
-        <pn-insight-card *ngIf="isOdd(i)"
+        <pn-article-card *ngIf="isOdd(i)"
                          [title]="article.title"
                          [subtitle]="article.subtitle"
                          [tags]="article.tags"
-        ></pn-insight-card>
+        ></pn-article-card>
       </ng-container>
     </div>
 
     <div fxFlex="50%">
       <ng-container *ngFor="let article of articles, let i = index">
-        <pn-insight-card *ngIf="isOdd(i+1)"
+        <pn-article-card *ngIf="isOdd(i+1)"
                          [title]="article.title"
                          [subtitle]="article.subtitle"
                          [tags]="article.tags"
-        ></pn-insight-card>
+        ></pn-article-card>
       </ng-container>
     </div>
 
   </div>
 
 </div>
-
-<pn-footer></pn-footer>

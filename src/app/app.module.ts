@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {AppComponent} from './app.component';
 import {InsightModule} from './insight/insight.module';
 import 'hammerjs';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import 'hammerjs';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    InsightModule
+    InsightModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [

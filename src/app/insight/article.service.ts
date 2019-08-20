@@ -41,4 +41,13 @@ export class ArticleService {
       }
     ];
   }
+
+  async get(id: string): Promise<Article> {
+    return {
+      title: 'How To Write Clean Code That Reduces Headaches',
+      subtitle: 'Abstraction is evil. Code is anti-evil, and clean code is perhaps divine',
+      tags: ['programming', 'engineering', 'code'],
+      source: 'medium.com'
+    };
+  }
 }

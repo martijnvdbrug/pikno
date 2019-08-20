@@ -5,7 +5,7 @@ import {MatCardModule, MatChipsModule, MatGridListModule} from '@angular/materia
 import {SharedModule} from '../shared/shared.module';
 import {ArticleService} from './article.service';
 import {ArticlesOverviewComponent} from './articles-overview/articles-overview.component';
-import { InsightCardComponent } from './insight-card/insight-card.component';
+import { ArticleCardComponent } from './article-card/article-card.component';
 import { InsightsOverviewComponent } from './insights-overview/insights-overview.component';
 
 
@@ -13,7 +13,7 @@ import { InsightsOverviewComponent } from './insights-overview/insights-overview
 @NgModule({
   declarations: [
     ArticlesOverviewComponent,
-    InsightCardComponent,
+    ArticleCardComponent,
     InsightsOverviewComponent
   ],
   imports: [

@@ -2,10 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'pn-root',
-  template: `
-      <main flex>
-          <router-outlet></router-outlet>
-      </main>`,
+  templateUrl: 'app.component.html',
   styles: []
 })
 export class AppComponent {

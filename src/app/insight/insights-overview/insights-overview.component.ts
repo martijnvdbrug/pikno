@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {Insight} from '../model/insight';
 
 @Component({
   selector: 'pn-insights-overview',
@@ -9,6 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 export class InsightsOverviewComponent implements OnInit {
 
   id: string;
+  insights: Insight[];
 
   constructor(
     private route: ActivatedRoute
