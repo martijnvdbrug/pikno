@@ -7,6 +7,7 @@ import {ArticleService} from './article.service';
 import {ArticlesOverviewComponent} from './articles-overview/articles-overview.component';
 import { ArticleCardComponent } from './article-card/article-card.component';
 import { InsightsOverviewComponent } from './insights-overview/insights-overview.component';
+import {RouterModule} from '@angular/router';
 
 
 
@@ -22,7 +23,8 @@ import { InsightsOverviewComponent } from './insights-overview/insights-overview
     MatCardModule,
     MatGridListModule,
     MatChipsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule
   ],
   providers: [
     ArticleService

@@ -10,7 +10,7 @@ import {Insight} from '../model/insight';
 export class InsightsOverviewComponent implements OnInit {
 
   id: string;
-  insights: Insight[];
+  insights: any[];
 
   constructor(
     private route: ActivatedRoute
@@ -20,6 +20,7 @@ export class InsightsOverviewComponent implements OnInit {
   async ngOnInit() {
     const {id} = await this.route.params.toPromise();
     this.id = id;
+    this.insights = [1, 2, 3, 4, 5];
   }
 
 }

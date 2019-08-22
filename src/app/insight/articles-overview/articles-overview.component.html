@@ -9,6 +9,7 @@
     <div fxFlex="50%">
       <ng-container *ngFor="let article of articles, let i = index">
         <pn-article-card *ngIf="isOdd(i)"
+                         [id]="article.title.split(' ')[0].toLowerCase()"
                          [title]="article.title"
                          [subtitle]="article.subtitle"
                          [tags]="article.tags"
@@ -19,6 +20,7 @@
     <div fxFlex="50%">
       <ng-container *ngFor="let article of articles, let i = index">
         <pn-article-card *ngIf="isOdd(i+1)"
+                         [id]="article.title.split(' ')[0].toLowerCase()"
                          [title]="article.title"
                          [subtitle]="article.subtitle"
                          [tags]="article.tags"
