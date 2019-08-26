@@ -1,8 +1,13 @@
 .insights-overview-container {
   padding: 8px;
 }
+
+::ng-deep .mat-card-header-text {
+  margin: 0 !important;
+}
+
 .mat-card {
-  margin: 10px 4px;
+  margin: 20px 10px;
   border-radius: 10px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -20,3 +25,11 @@
     z-index: -1;
   }
 }
+.no-insights-container {
+  padding: 50px;
+}
+
+.insights-overview-container mat-card-content {
+  margin: 0;
+}
+

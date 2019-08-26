@@ -1,5 +1,5 @@
 @import '../../node_modules/@angular/material/theming';
-@import 'canary';
+@import 'toxic-lake';
 @import 'flamingo';
 // Plus imports for other components in your app.
 
@@ -18,7 +18,7 @@ $app-typography: mat-typography-config(
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $primary-palette: mat-palette($flamingo);
-$accent-palette:  mat-palette($canary);
+$accent-palette:  mat-palette($toxic-lake);
 
 // The warn palette is optional (defaults to red).
 $warn-palette: mat-palette($mat-red);

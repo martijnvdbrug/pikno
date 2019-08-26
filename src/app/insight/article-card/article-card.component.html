@@ -1,11 +1,11 @@
-<mat-card class="article-card" [routerLink]="['insights', id]">
-  <mat-card-header class="article-card-header">
-    <mat-card-title>{{ title }}</mat-card-title>
-    <mat-card-subtitle>{{ subtitle }}</mat-card-subtitle>
+<mat-card class="article-card" [routerLink]="['insights', article.id]">
+  <mat-card-header>
+    <mat-card-title>{{ article.title }}</mat-card-title>
+    <mat-card-subtitle>{{ article.subtitle }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <mat-chip-list disabled="true" aria-label="Tags">
-      <mat-chip disabled="true" *ngFor="let tag of tags">{{ tag }}</mat-chip>
+      <mat-chip disabled="true">{{ article.source | hostname}}</mat-chip>
     </mat-chip-list>
   </mat-card-content>
 </mat-card>

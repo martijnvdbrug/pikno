@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {Insight} from '../model/insight';
+import {ArticleService} from '../article.service';
+import {Article} from '../model/article';
 
 @Component({
   selector: 'pn-insights-overview',
@@ -9,18 +10,18 @@ import {Insight} from '../model/insight';
 })
 export class InsightsOverviewComponent implements OnInit {
 
-  id: string;
-  insights: any[];
+  article: Article;
 
   constructor(
+    private articleService: ArticleService,
     private route: ActivatedRoute
   ) {
   }
 
   async ngOnInit() {
-    const {id} = await this.route.params.toPromise();
-    this.id = id;
-    this.insights = [1, 2, 3, 4, 5];
+    await this.route.params.subscribe(async (params) => {
+      this.article = await this.articleService.getInsightsForArticle(params.id);
+    });
   }
 
 }

@@ -1,20 +1,13 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Article} from '../model/article';
 
 @Component({
   selector: 'pn-article-card',
   templateUrl: './article-card.component.html',
   styleUrls: ['./article-card.component.scss']
 })
-export class ArticleCardComponent implements OnInit {
+export class ArticleCardComponent {
 
-  @Input() id: string;
-  @Input() title: string;
-  @Input() subtitle: string;
-  @Input() tags: string[];
-
-  constructor() {}
-
-  ngOnInit() {
-  }
+  @Input() article: Article;
 
 }
